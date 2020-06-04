@@ -10,4 +10,34 @@ html {
 
 body {
   box-sizing: border-box;
-  background-image: url("../../images/landing-image.jpg"); }
+  background-image: url("../../assets/images/landing-image.jpg"); }
+
+.content__wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.navigation {
+  height: 45%;
+  width: 6%;
+  border: 2px solid #fff; }
+  .navigation__list {
+    display: none; }
+
+.home {
+  height: calc(90vh - 5rem);
+  width: 80vw;
+  border: 2px solid #fff;
+  display: flex; }
+
+.profile {
+  height: calc(100% + 5rem);
+  margin: -2.5rem 0 2.5rem 0;
+  width: 40%;
+  border: 2px solid #fff; }
+
+.side__panel {
+  height: 100%;
+  width: 54%;
+  border: 2px solid #fff; }

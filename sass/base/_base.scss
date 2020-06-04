@@ -12,5 +12,12 @@ html {
 
 body {
   box-sizing: border-box;
-  background-image: url('../../images/landing-image.jpg');
+  background-image: url('../../assets/images/landing-image.jpg');
+}
+
+.content__wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
