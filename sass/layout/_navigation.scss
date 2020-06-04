@@ -2,8 +2,46 @@
   height: 45%;
   width: 6%;
   border: 2px solid #fff; //test
+  background-color: #fff; //test
+  border-radius: 5px;
 
   &__list {
-    display: none; //change latter
+    height: 100%;
+    width: 100%;
+    text-align: center;
+  }
+
+  &__item {
+    padding: 1rem 0;
+    &:not(:last-child) {
+      border-bottom: 1px solid #ccc;
+    }
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      color: #000; // for now
+      text-transform: uppercase;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: all .3s ease;
+    }
+
+    &--active {
+      color: red !important;
+      fill: red !important;
+    }
+
+    &:hover {
+      color: orange;
+      fill: orange;
+    }
+  }
+
+  &__icon {
+    height: 1.6rem;
+    width: 100%;
   }
 }

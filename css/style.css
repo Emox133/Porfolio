@@ -6,7 +6,8 @@
   box-sizing: inherit; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  font-family: 'Nunito', sans-serif; }
 
 body {
   box-sizing: border-box;
@@ -21,13 +22,37 @@ body {
 .navigation {
   height: 45%;
   width: 6%;
-  border: 2px solid #fff; }
+  border: 2px solid #fff;
+  background-color: #fff;
+  border-radius: 5px; }
   .navigation__list {
-    display: none; }
+    height: 100%;
+    width: 100%;
+    text-align: center; }
+  .navigation__item {
+    padding: 1rem 0; }
+    .navigation__item:not(:last-child) {
+      border-bottom: 1px solid #ccc; }
+  .navigation__link:link, .navigation__link:visited {
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: all .3s ease; }
+  .navigation__link--active {
+    color: red !important;
+    fill: red !important; }
+  .navigation__link:hover {
+    color: orange;
+    fill: orange; }
+  .navigation__icon {
+    height: 1.6rem;
+    width: 100%; }
 
 .home {
   height: calc(90vh - 5rem);
-  width: 80vw;
+  width: 85vw;
   border: 2px solid #fff;
   display: flex; }
 
@@ -39,5 +64,5 @@ body {
 
 .side__panel {
   height: 100%;
-  width: 54%;
+  width: 59%;
   border: 2px solid #fff; }
