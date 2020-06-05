@@ -1,14 +1,17 @@
 // BASE
-@import './base/_base';
+@import './base/base';
+
+// TYPOGRAPHY 
+@import './typography/headings';
 
 // ABSTRACTS 
-@import './abstracts/_variables';
+@import './abstracts/variables';
 
 // LAYOUT
-@import './layout/_navigation';
+@import './layout/navigation';
 
 // PAGES
-@import './pages/_home';
+@import './pages/home';
 
 // COMPONENTS
-@import './components/_profile-box';
+@import './components/profile-box';
