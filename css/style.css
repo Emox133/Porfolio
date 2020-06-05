@@ -142,6 +142,52 @@ body {
     background-image: linear-gradient(to right, #0077b6, #0077b6);
     fill: #fff;
     border-radius: 50%; }
+  .about__pricing-offer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1rem; }
+  .about__pricing-box {
+    padding: 3rem; }
+    .about__pricing-box:not(:last-child) {
+      border-right: 1px solid #ccc;
+      margin-right: 2rem; }
+  .about__pricing-icon {
+    height: 4rem;
+    width: 4rem;
+    fill: #0077b6;
+    display: block;
+    margin: 1rem auto; }
+  .about__pricing-icon--small {
+    height: 2rem;
+    width: 2rem;
+    fill: #0077b6; }
+  .about__pricing-plan {
+    font-size: 1.5rem;
+    font-weight: 700; }
+  .about__pricing-price {
+    font-size: 4rem;
+    margin-bottom: 1rem; }
+  .about__pricing-span {
+    font-weight: 300; }
+  .about__pricing-list {
+    list-style: none; }
+  .about__pricing-item {
+    font-size: 1.7rem;
+    font-weight: 300;
+    margin-bottom: 2rem; }
+  .about__pricing-item--disabled {
+    text-decoration: line-through; }
+  .about__pricing-paybox {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .about__pricing-btn:link, .about__pricing-btn:visited {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000; }
 
 .profile {
   height: calc(100% + 5rem);

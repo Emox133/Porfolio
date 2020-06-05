@@ -20,6 +20,7 @@
   height: 100%;
   width: 100%;
 
+  // ABOUT ME PAGE
   &__me {
     margin-bottom: 5rem;
   }
@@ -92,9 +93,8 @@
     }
   }
 
+  // SERVICES
   &__services {
-
-
     &-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -128,4 +128,93 @@
       border-radius: 50%;
     }
   }
+
+  // PRICING PAGE
+  &__pricing {
+    &-offer {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      margin-top: 1rem;;
+    }
+
+    &-box {
+      &:not(:last-child) {
+        border-right: 1px solid #ccc;
+        margin-right: 2rem;
+      }
+      padding: 3rem;
+    }
+
+    &-icon {
+      height: 4rem;
+      width: 4rem;
+      fill: $color-primary;
+      display: block;
+      margin: 1rem auto;
+    }
+
+    &-icon--small {
+      height: 2rem;
+      width: 2rem;
+      fill: $color-primary;
+    }
+
+    &-plan {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    &-price {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+    }
+
+    &-span {
+      // font-size: 1.7rem;
+      font-weight: 300;
+    }
+
+    &-list {
+      list-style: none;
+    }
+
+    &-item {
+      font-size: 1.7rem;
+      font-weight: 300;
+      margin-bottom: 2rem;
+    }
+
+    &-item--disabled {
+      text-decoration: line-through;
+    }
+
+    &-paybox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &-btn {
+      &:link,
+      &:visited {
+        font-size: 2rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #000;
+      }
+    }
+  }
+
+// FUN FACTS PAGE
+
 }
+
+
+
+
+
+
+
+
