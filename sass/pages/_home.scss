@@ -208,7 +208,36 @@
   }
 
 // FUN FACTS PAGE
+&__facts {
+  &-content {
+    height: 20rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+  }
+  
+  &-fact {
+    text-align: center;
+    padding: 0 1rem;
 
+    &:not(:last-child) {
+      border-right: 1px solid #ccc;
+    }
+  }
+
+  &-icon {
+    height: 5rem;
+    width: 5rem;
+    fill: $color-primary;
+    margin-bottom: .5rem;
+  }
+
+  &-text {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+}
 }
 
 
