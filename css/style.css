@@ -11,7 +11,10 @@ html {
 
 body {
   box-sizing: border-box;
-  background-image: url("../../assets/images/landing-image.jpg"); }
+  background-image: url("../../assets/images/landing-image-4.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 .content__wrapper {
   height: 100vh;
@@ -22,12 +25,14 @@ body {
 .navigation {
   height: 45%;
   width: 6%;
-  border: 2px solid #fff;
   background-color: #fff;
-  border-radius: 5px; }
+  border-radius: 5px;
+  margin-right: 1rem;
+  z-index: 1500; }
   .navigation__list {
     height: 100%;
     width: 100%;
+    list-style: none;
     text-align: center; }
   .navigation__item {
     padding: 1rem 0; }
@@ -37,32 +42,128 @@ body {
     color: #000;
     text-transform: uppercase;
     text-decoration: none;
-    font-weight: bold;
-    font-size: 1rem;
+    font-weight: 700;
+    font-size: .9rem;
     transition: all .3s ease; }
   .navigation__link--active {
-    color: red !important;
-    fill: red !important; }
+    color: #0077b6 !important;
+    fill: #0077b6 !important; }
   .navigation__link:hover {
-    color: orange;
-    fill: orange; }
+    color: #0077b6;
+    fill: #0077b6; }
   .navigation__icon {
     height: 1.6rem;
-    width: 100%; }
+    width: 100%;
+    margin-bottom: .1rem; }
 
 .home {
   height: calc(90vh - 5rem);
   width: 85vw;
-  border: 2px solid #fff;
   display: flex; }
+
+.side__panel {
+  height: 100%;
+  width: 59%; }
 
 .profile {
   height: calc(100% + 5rem);
   margin: -2.5rem 0 2.5rem 0;
   width: 40%;
-  border: 2px solid #fff; }
-
-.side__panel {
-  height: 100%;
-  width: 59%;
-  border: 2px solid #fff; }
+  position: relative; }
+  .profile__box {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0.1rem -0.1rem 1rem rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 2000; }
+  .profile::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 8px;
+    background-image: linear-gradient(to bottom, rgba(0, 119, 182, 0.6), rgba(0, 119, 182, 0.1));
+    transform: translate(-5%, -3%);
+    z-index: 1000; }
+  .profile__image-box {
+    position: relative;
+    height: 50%; }
+  .profile__image-landing {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0% 85%); }
+  .profile__image-avatar {
+    height: 13rem;
+    width: 27%;
+    position: absolute;
+    top: 117%;
+    left: 50%;
+    transform: translate(-50%, -117%);
+    border: 3px solid #fff;
+    border-radius: 50%;
+    background-size: cover; }
+  .profile__text-box {
+    margin-top: 4rem;
+    text-align: center; }
+  .profile__user-name {
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: .5rem; }
+  .profile__user-occupation {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: .05em;
+    text-transform: capitalize;
+    background-image: linear-gradient(to right, #0077b6, #0077b6);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent; }
+  .profile__icon-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem; }
+  .profile__link:link, .profile__link:visited {
+    font-size: 1rem;
+    width: 10%;
+    transition: all .4s ease; }
+  .profile__icon {
+    height: 2rem;
+    width: 100%; }
+  .profile__icon-twitter {
+    fill: #1DA1F2; }
+  .profile__icon-github {
+    fill: #444; }
+  .profile__icon-mail {
+    fill: #32ff6a; }
+  .profile__icon-stackoverflow {
+    fill: #f48024; }
+  .profile__icon-linkedin {
+    fill: #2867B2; }
+  .profile__footer {
+    height: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 94%;
+    left: 0; }
+  .profile__icon-footer {
+    height: 1.5rem;
+    width: 3rem;
+    margin-top: 1rem; }
+  .profile__link-footer {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000; }

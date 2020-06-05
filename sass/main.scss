@@ -1,9 +1,14 @@
 // BASE
-@import './base/base';
+@import './base/_base';
+
+// ABSTRACTS 
+@import './abstracts/_variables';
 
 // LAYOUT
-@import './layout/navigation';
+@import './layout/_navigation';
 
 // PAGES
-@import './pages/home';
+@import './pages/_home';
 
+// COMPONENTS
+@import './components/_profile-box';

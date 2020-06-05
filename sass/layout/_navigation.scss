@@ -1,13 +1,16 @@
 .navigation {
   height: 45%;
   width: 6%;
-  border: 2px solid #fff; //test
+  // border: 2px solid #fff; //test
   background-color: #fff; //test
   border-radius: 5px;
+  margin-right: 1rem;
+  z-index: 1500;
 
   &__list {
     height: 100%;
     width: 100%;
+    list-style: none;
     text-align: center;
   }
 
@@ -24,24 +27,25 @@
       color: #000; // for now
       text-transform: uppercase;
       text-decoration: none;
-      font-weight: bold;
-      font-size: 1rem;
+      font-weight: 700;
+      font-size: .9rem;
       transition: all .3s ease;
     }
 
     &--active {
-      color: red !important;
-      fill: red !important;
+      color: $color-primary !important;
+      fill: $color-primary !important;
     }
 
     &:hover {
-      color: orange;
-      fill: orange;
+      color: $color-primary;
+      fill: $color-primary;
     }
   }
 
   &__icon {
     height: 1.6rem;
     width: 100%;
+    margin-bottom: .1rem;
   }
 }

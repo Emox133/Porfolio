@@ -1,0 +1,150 @@
+.profile {
+  height: calc(100% + 5rem);
+  margin: -2.5rem 0 2.5rem 0;
+  width: 40%;
+  position: relative;
+  
+  &__box {
+    height: 100%;
+    width: 100%;
+    // border: 2px solid #fff; //test
+    position: relative;
+    background-color: #fff;
+    box-shadow: .1rem -.1rem 1rem rgba(0, 0, 0, .5);
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 2000;
+  }
+
+  &::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 8px;
+    background-image: linear-gradient(to bottom, rgba($color-primary, .6), rgba($color-primary, .1));
+    transform: translate(-5%, -3%);
+    z-index: 1000;
+  }
+  
+  &__image-box {
+    position: relative;
+    height: 50%;
+    // border-bottom: 1.5px solid #ccc; //Optional
+    // border: 2px solid orangered; //test
+  }
+
+  &__image-landing {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0% 85%);
+  }
+
+  &__image-avatar {
+    height: 13rem;
+    width: 27%;
+    position: absolute;
+    top: 117%;
+    left: 50%;
+    transform: translate(-50%, -117%);
+    border: 3px solid #fff;
+    border-radius: 50%;
+    background-size: cover;
+  }
+
+  &__text-box {
+    margin-top: 4rem;
+    text-align: center;
+    // border: 2px solid blue; //test
+  }
+
+  &__user-name {
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: .5rem;
+  }
+
+  &__user-occupation {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: .05em;
+    text-transform: capitalize;
+    background-image: linear-gradient(to right, $color-primary, $color-primary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  &__icon-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    // border: 2px solid $color-primary; //test
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      font-size: 1rem;
+      width: 10%;
+      transition: all .4s ease;
+    }
+  }
+
+  &__icon {
+    height: 2rem;
+    width: 100%;
+  }
+
+  &__icon-twitter {
+    fill: #1DA1F2;
+  }
+
+  &__icon-github {
+    fill: #444;
+  }
+
+  &__icon-mail {
+    fill: #32ff6a;
+  }
+
+  &__icon-stackoverflow {
+    fill: #f48024;
+  }
+
+  &__icon-linkedin {
+    fill: #2867B2;
+  }
+
+  &__footer {
+    height: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    // border: 2px solid red; // test
+    position: absolute;
+    top: 94%;
+    left: 0;
+  }
+
+  &__icon-footer {
+    height: 1.5rem;
+    width: 3rem;
+    margin-top: 1rem;
+  }
+
+  &__link-footer {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+  }
+}
