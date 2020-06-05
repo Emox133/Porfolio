@@ -64,7 +64,6 @@ body {
 .side__panel {
   height: 100%;
   width: 59%;
-  border: 2px solid #fff;
   background-color: #eee;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -120,6 +119,29 @@ body {
         margin-bottom: 1rem; }
     .about__labels-item--white {
       background-color: #fff; }
+  .about__services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 5rem;
+    column-gap: 2rem;
+    margin-top: 2rem; }
+  .about__services-box {
+    text-align: center;
+    padding: 2rem; }
+  .about__services-title {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    text-transform: capitalize; }
+  .about__services-text {
+    font-size: 1.5rem; }
+  .about__services-icon {
+    height: 6.5rem;
+    width: 6.5rem;
+    padding: 2rem;
+    background-image: linear-gradient(to right, #0077b6, #0077b6);
+    fill: #fff;
+    border-radius: 50%; }
 
 .profile {
   height: calc(100% + 5rem);
@@ -129,7 +151,6 @@ body {
   .profile__box {
     height: 100%;
     width: 100%;
-    border: 2px solid #fff;
     position: relative;
     background-color: #fff;
     box-shadow: 0.1rem -0.1rem 1rem rgba(0, 0, 0, 0.5);
