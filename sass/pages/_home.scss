@@ -9,7 +9,7 @@
   height: 100%;
   width: 59%;
   // border: 2px solid #fff; //test
-  background-color: #eee;
+  background-color: #fff;
   overflow-y: scroll;
   overflow-x: hidden;
   padding: 1rem 2rem;
@@ -143,7 +143,6 @@
     }
 
     &-span {
-      // font-size: 1.7rem;
       font-weight: 300;
     }
 
@@ -259,7 +258,7 @@
       width: 6rem;
       display: none;
       margin: 0 auto 1rem auto;
-      // margin-bottom: 1.5rem;
+      margin-bottom: 1.5rem;
     }
 
     &-heading {
@@ -273,7 +272,7 @@
       text-align: left;
 
       &:not(:last-child) {
-        border-bottom: 1px solid #ccc;
+        // border-bottom: 1px solid #ccc;
       }
     }
 
@@ -327,6 +326,228 @@
       font-size: 2.1rem;
       font-weight: 300;
     } 
+  }
+
+  // MY SKILLS PAGE
+  &__skills {
+    &-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      margin-top: 3rem;
+    }
+
+    &-box {
+      padding: 1rem 2rem;
+
+      &-2 {
+        margin-top: -.2rem;
+      }
+    }
+
+    &-title-box {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    &-icon {
+      height: 4rem;
+      width: 4rem;
+      margin: 0 .7rem 1rem 0;
+      fill: $color-primary;
+    }
+
+    &-title {
+      font-size: 2rem;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+
+    //////////////// BOX-1 //////////////
+    // &-bar-box {
+    // }
+    
+    &-bar-text, &-circle-text {
+      font-size: 1.5rem;
+      font-weight: 400;
+      text-transform: capitalize;
+      margin: 2rem 0 1rem 0;
+    }
+
+    &-bar--transparent {
+      display: inline-block;
+      height: .4rem;
+      width: 100%;
+      background-color: #ccc;
+      border-radius: 3px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    &-bar {
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: $color-primary;
+
+      &-1 {
+        width: 75%;        
+      }
+
+      &-2 {
+       width: 50%;
+      }
+
+      &-3 {
+       width: 90%;
+      }
+
+      &-4 {
+        width: 25%;
+      }
+    }
+
+    //////////////////BOX-2/////////////////////
+    &-circle-box {
+      width: 100%;
+    }
+
+    &-circle {
+      height: 2rem;
+      width: 2rem;
+      display: inline-block;
+      border-radius: 50%;
+
+      &:not(:last-child) {
+        margin-right: .2rem;
+      }
+
+      &--filled {
+        background-color: $color-primary;
+      }
+
+      &--empty {
+        background-color: #ccc;
+      }
+    }
+
+    /////////////BOX-3///////////////
+    &-progress-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
+
+    &-progress-box {
+      height: 15rem;
+      width: 15rem;
+      position: relative;
+      // text-align: center;
+    }
+
+    &-progress-circle {
+      height: 15rem;
+      width: 15rem;
+      position: relative;
+
+      & circle {
+        fill: none;
+        stroke-width: 8;
+        stroke: #000;
+        stroke-dasharray: 320;
+        stroke-dashoffset: 320;
+        stroke-linecap: round;
+        transform: translate(5px, 5px);
+
+        &:nth-child(1) {
+          stroke-dashoffset: 0;
+          stroke: #ccc;
+        }
+      }
+
+      &--1 circle {
+        stroke-dashoffset: calc(320 - (320 * 90) / 100);
+        stroke: $color-primary;
+      }
+
+      &--2 circle {
+        stroke-dashoffset: calc(320 - (320 * 80) / 100);
+        stroke: $color-primary;
+      }
+
+      &--3 circle {
+        stroke-dashoffset: calc(320 - (320 * 65) / 100);
+        stroke: $color-primary;
+      }
+
+      &--4 circle {
+        stroke-dashoffset: calc(320 - (320 * 90) / 100);
+        stroke: $color-primary;
+      }
+    }
+
+    &-progress-number {
+      width: 50%;
+      position: absolute;
+      top: 28%;
+      left: 24%;
+    }
+
+    &-progress-percentage {
+      font-size: 2rem;
+      font-weight: 700;
+    }
+
+    &-progress-heading-box {
+      height: 2rem;
+      width: 10rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    &-progress-heading {
+      width: 100%;
+      margin: 0 0 7.8rem 1.1rem;
+      text-align: center;
+    }
+
+    //////////////////BOX-4///////////////////
+    &-knowledge {
+        margin-bottom: 2rem;
+
+      &-list {
+        list-style: none;
+        height: 100%;
+      }
+
+      &-item-box {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        &:not(:last-child) {
+          margin-bottom: 1rem;
+        }
+      }
+
+      &-item {
+        font-size: 2rem;
+        font-weight: 300;
+        color: #777;
+      }
+
+      &-icon {
+        height: 2rem;
+        width: 2rem;
+        fill: $color-primary;
+        margin-right: 1rem;
+      }
+    }
   }
 }
 

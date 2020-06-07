@@ -100,7 +100,7 @@ body {
 .side__panel {
   height: 100%;
   width: 59%;
-  background-color: #eee;
+  background-color: #fff;
   overflow-y: scroll;
   overflow-x: hidden;
   padding: 1rem 2rem;
@@ -257,7 +257,8 @@ body {
   height: 6rem;
   width: 6rem;
   display: none;
-  margin: 0 auto 1rem auto; }
+  margin: 0 auto 1rem auto;
+  margin-bottom: 1.5rem; }
 
 .resume__timelapse-heading {
   font-size: 2rem;
@@ -266,8 +267,6 @@ body {
 .resume__timelapse-child-box {
   padding: 2rem 0;
   text-align: left; }
-  .resume__timelapse-child-box:not(:last-child) {
-    border-bottom: 1px solid #ccc; }
 
 .resume__timelapse-year {
   font-size: 1.3rem;
@@ -305,6 +304,161 @@ body {
 .resume__timelapse-text {
   font-size: 2.1rem;
   font-weight: 300; }
+
+.resume__skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin-top: 3rem; }
+
+.resume__skills-box {
+  padding: 1rem 2rem; }
+  .resume__skills-box-2 {
+    margin-top: -.2rem; }
+
+.resume__skills-title-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+
+.resume__skills-icon {
+  height: 4rem;
+  width: 4rem;
+  margin: 0 .7rem 1rem 0;
+  fill: #0077b6; }
+
+.resume__skills-title {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem; }
+
+.resume__skills-bar-text, .resume__skills-circle-text {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  margin: 2rem 0 1rem 0; }
+
+.resume__skills-bar--transparent {
+  display: inline-block;
+  height: .4rem;
+  width: 100%;
+  background-color: #ccc;
+  border-radius: 3px;
+  position: relative;
+  overflow: hidden; }
+
+.resume__skills-bar {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #0077b6; }
+  .resume__skills-bar-1 {
+    width: 75%; }
+  .resume__skills-bar-2 {
+    width: 50%; }
+  .resume__skills-bar-3 {
+    width: 90%; }
+  .resume__skills-bar-4 {
+    width: 25%; }
+
+.resume__skills-circle-box {
+  width: 100%; }
+
+.resume__skills-circle {
+  height: 2rem;
+  width: 2rem;
+  display: inline-block;
+  border-radius: 50%; }
+  .resume__skills-circle:not(:last-child) {
+    margin-right: .2rem; }
+  .resume__skills-circle--filled {
+    background-color: #0077b6; }
+  .resume__skills-circle--empty {
+    background-color: #ccc; }
+
+.resume__skills-progress-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr); }
+
+.resume__skills-progress-box {
+  height: 15rem;
+  width: 15rem;
+  position: relative; }
+
+.resume__skills-progress-circle {
+  height: 15rem;
+  width: 15rem;
+  position: relative; }
+  .resume__skills-progress-circle circle {
+    fill: none;
+    stroke-width: 8;
+    stroke: #000;
+    stroke-dasharray: 320;
+    stroke-dashoffset: 320;
+    stroke-linecap: round;
+    transform: translate(5px, 5px); }
+    .resume__skills-progress-circle circle:nth-child(1) {
+      stroke-dashoffset: 0;
+      stroke: #ccc; }
+  .resume__skills-progress-circle--1 circle {
+    stroke-dashoffset: calc(320 - (320 * 90) / 100);
+    stroke: #0077b6; }
+  .resume__skills-progress-circle--2 circle {
+    stroke-dashoffset: calc(320 - (320 * 80) / 100);
+    stroke: #0077b6; }
+  .resume__skills-progress-circle--3 circle {
+    stroke-dashoffset: calc(320 - (320 * 65) / 100);
+    stroke: #0077b6; }
+  .resume__skills-progress-circle--4 circle {
+    stroke-dashoffset: calc(320 - (320 * 90) / 100);
+    stroke: #0077b6; }
+
+.resume__skills-progress-number {
+  width: 50%;
+  position: absolute;
+  top: 28%;
+  left: 24%; }
+
+.resume__skills-progress-percentage {
+  font-size: 2rem;
+  font-weight: 700; }
+
+.resume__skills-progress-heading-box {
+  height: 2rem;
+  width: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase; }
+
+.resume__skills-progress-heading {
+  width: 100%;
+  margin: 0 0 7.8rem 1.1rem;
+  text-align: center; }
+
+.resume__skills-knowledge {
+  margin-bottom: 2rem; }
+  .resume__skills-knowledge-list {
+    list-style: none;
+    height: 100%; }
+  .resume__skills-knowledge-item-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; }
+    .resume__skills-knowledge-item-box:not(:last-child) {
+      margin-bottom: 1rem; }
+  .resume__skills-knowledge-item {
+    font-size: 2rem;
+    font-weight: 300;
+    color: #777; }
+  .resume__skills-knowledge-icon {
+    height: 2rem;
+    width: 2rem;
+    fill: #0077b6;
+    margin-right: 1rem; }
 
 .profile {
   height: calc(100% + 5rem);
