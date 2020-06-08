@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/jpg" href="assets/images/landing-image-4.jpg">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <title>Portfolio prototype</title>
+  <title>Portfolio</title>
 </head>
 <body>
   <div class="content__wrapper">
@@ -31,7 +32,7 @@
             </a>
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link">
+            <a href="#projects-page" class="navigation__link">
               <svg class="navigation__icon brush__icon">
                 <use xlink:href="assets/icons/sprite.svg#icon-brush"></use>
               </svg>
@@ -680,7 +681,6 @@
                         <h2 class="resume__skills-progress-heading">Css</h2>
                       </div>
                     </div>
-
                   </div>
                 </div>
 
@@ -750,17 +750,121 @@
                         </svg>
                         <li class="resume__skills-knowledge-item">Search engine marketing</li>
                       </div>
-
                     </ul>
                   </div>
                 </div>
-
               </div>
             </div>
         </section>
 
-
         <!-- Projects section -->
+          <section class="projects" id="projects-page">
+            <!-- <div class="projects__nav-box"> -->
+              <div class="title-box">
+                <h2 class="title-main">
+                  Recent
+                  <span class="title-sub">
+                    works
+                  </span>
+                </h2>
+              </div>
+              <!-- <nav class="projects__nav">
+                <ul class="projects__nav-list">
+                  <li class="projects__nav-item"><a href="#" class="projects__nav-link projects__nav-link--active">All</a></li>
+                  <li class="projects__nav-item"><a href="#" class="projects__nav-link">Photo</a></li>
+                  <li class="projects__nav-item"><a href="#" class="projects__nav-link">Video</a></li>
+                  <li class="projects__nav-item"><a href="#" class="projects__nav-link">Music</a></li>
+                  <li class="projects__nav-item"><a href="#" class="projects__nav-link">Design</a></li>
+                </ul>
+              </nav> -->
+            <!-- </div> -->
+
+            <div class="projects__content">
+              <!-- LEFT SIDE -->
+              <div class="projects__left-side">
+                <div class="projects__box projects__box-1">
+                  <a href="https://mobico-app.herokuapp.com/" target="_blank" class="projects__link">
+                    <img src="assets/images/project-1.jpg" alt="Project image" class="projects__image projects__image-1">
+                  </a>
+                  <div class="projects__title-box">
+                    <h1 class="projects__title">Social Media</h1>
+                    <p class="projects__genre">App</p>
+                  </div>
+                </div>
+
+                <div class="projects__box projects__box-2">
+                  <a href="https://boutique-du-jour.herokuapp.com/" target="_blank" class="projects__link">
+                    <img src="assets/images/project-2.jpg" alt="Project image" class="projects__image projects__image-2">
+                  </a>
+                  <div class="projects__title-box">
+                    <h1 class="projects__title">E-commerce / v. Boutique</h1>
+                    <p class="projects__genre">App</p>
+                  </div>
+                </div>
+
+                <div class="projects__box projects__box-3">
+                  <a href="#" target="_blank" class="projects__link">
+                    <img src="assets/images/project-3.jpg" alt="Project image" class="projects__image projects__image-3">
+                  </a>
+                  <div class="projects__title-box">
+                    <h1 class="projects__title">Form Validation</h1>
+                    <p class="projects__genre">App</p>
+                  </div>
+                </div>
+
+                <div class="projects__box projects__box-4">
+                  <a href="#" target="_blank" class="projects__link">
+                    <img src="assets/images/project-4.jpg" alt="Project image" class="projects__image projects__image-4">
+                  </a>
+                  <div class="projects__title-box">
+                    <h1 class="projects__title">Paint</h1>
+                    <p class="projects__genre">App</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- RIGHT SIDE -->
+              <div class="projects__right-side">
+                <div class="projects__box projects__box-5">
+                  <a href="https://movie-tv-shows.herokuapp.com/" target="_blank" class="projects__link">
+                    <img src="assets/images/project-5.jpg" alt="Project image" class="projects__image projects__image-5">
+                  </a>
+                  <div class="projects__title-box">
+                    <h1 class="projects__title">Movies/Tv-Shows</h1>
+                    <p class="projects__genre">App</p>
+                  </div>
+                </div>
+                <div class="projects__box projects__box-6">
+                  <a href="#" target="_blank" class="projects__link">
+                    <img src="assets/images/project-6.jpg" alt="Project image" class="projects__image projects__image-6">
+                  </a>
+                  <div class="projects__title-box">
+                    <h1 class="projects__title">Take Notes</h1>
+                    <p class="projects__genre">App</p>
+                  </div>
+                </div>
+                <div class="projects__box projects__box-7">
+                  <a href="#" target="_blank" class="projects__link">
+                    <img src="assets/images/project-7.jpg" alt="Project image" class="projects__image projects__image-7">
+                  </a>
+                  <div class="projects__title-box">
+                    <h1 class="projects__title">E-commerce / v. Airport</h1>
+                    <p class="projects__genre">App</p>
+                  </div>
+                </div>
+                <div class="projects__box projects__box-8">
+                  <a href="https://salihovic-emir-portfolio.netlify.app/" target="_blank" class="projects__link">
+                    <img src="assets/images/project-8.jpg" alt="Project image" class="projects__image projects__image-8">
+                  </a>
+                  <div class="projects__title-box">
+                    <h1 class="projects__title">Old Portfolio</h1>
+                    <p class="projects__genre">Website</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
         <!-- Blog(or...) section -->
         <!-- Contact section -->
       </section>

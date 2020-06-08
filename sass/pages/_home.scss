@@ -213,7 +213,7 @@
 
 // RESUME PAGE
 .resume {
-  // display: none;
+  display: none;
   // RESUME
   &__timelapse {
     &-content {
@@ -271,9 +271,9 @@
       padding: 2rem 0;
       text-align: left;
 
-      &:not(:last-child) {
+      // &:not(:last-child) {
         // border-bottom: 1px solid #ccc;
-      }
+      // }
     }
 
     &-year {
@@ -551,6 +551,117 @@
   }
 }
 
+// PROJECTS PAGE
+.projects {
+  &__nav-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__nav {
+    &-list {
+      list-style: none;
+      display: flex;
+    }
+
+    &-item {
+      transition: all .3s ease;
+      backface-visibility: hidden;
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+
+      &:hover {
+        transform: skewY(10deg) scale(1.3);
+      }
+    }
+
+    &-link {
+      &:link,
+      &:visited {
+        font-size: 1.5rem;
+        font-weight: 300;
+        color: #222;
+        text-transform: capitalize;
+        text-decoration: none;
+        transition: all .3s ease;
+      }
+
+      &--active {
+        color: $color-primary !important;
+        font-weight: 700;
+      }
+
+      &:hover {
+        transform: skewY(20deg);
+        color: $color-primary;
+        border-radius: 3px;
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-around;
+
+    &:not(:last-child) {
+      border-right: 2px solid #000;
+    }
+  }
+
+  &__left-side, &__right-side {
+    font-size: 2rem;
+    text-align: center;
+    width: 50%;
+  }
+
+  &__box {
+    padding: 2rem;
+  }
+
+  &__image {
+    width: 100%;
+    transition: all .5s ease;
+
+    &:hover {
+      transform: scale(1.05);
+      filter: blur(.5rem);
+      background-blend-mode: screen;
+    }
+
+    &-1 {
+      height: 32rem;
+    }
+
+    &-2, &-3, &-4 {
+      height: 18rem;
+    }
+
+    &-5, &-6 {
+      height: 20rem;
+    }
+
+    &-7 {
+      height: 30rem;
+    }
+
+    &-8 {
+      height: 35rem;
+    }
+  }
+
+  &__title {
+    margin-top: 1rem;
+  }
+
+  &__genre {
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: #888;
+  }
+}
 
 
 
