@@ -4,12 +4,42 @@
   "description": "",
   "private": true,
   "main": "index.js",
+  "browserslist": [
+    ">= 2%",
+    "last 5 versions"
+  ],
   "scripts": {
-    "sass-w": "node-sass sass/main.scss css/style.css -w"
+    "start": "webpack-dev-server --config webpack.dev.js --open",
+    "sass-w": "node-sass src/sass/main.scss src/css/style.css -w",
+    "build": "webpack --config webpack.prod.js"
   },
   "author": "Emir Salihović",
   "license": "ISC",
   "dependencies": {
+    "html-webpack-plugin": "^4.3.0",
     "node-sass": "^4.14.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "autoprefixer": "^9.8.0",
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.5.3",
+    "cssnano": "^4.1.10",
+    "file-loader": "^6.0.0",
+    "html-loader": "^1.1.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "postcss-loader": "^3.0.0",
+    "sass": "^1.26.8",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.2.1",
+    "svg-sprite-loader": "^5.0.0",
+    "svg-spritemap-webpack-plugin": "^3.5.6",
+    "svgo-loader": "^2.2.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
   }
 }

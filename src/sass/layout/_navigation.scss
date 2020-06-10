@@ -1,5 +1,5 @@
 .navigation {
-  height: 45%;
+  height: 38%;
   width: 6%;
   // border: 2px solid #fff; //test
   background-color: #fff; //test
@@ -10,12 +10,15 @@
   &__list {
     height: 100%;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     list-style: none;
     text-align: center;
   }
 
   &__item {
-    padding: 1rem 0;
     &:not(:last-child) {
       border-bottom: 1px solid #ccc;
     }
@@ -46,6 +49,6 @@
   &__icon {
     height: 1.6rem;
     width: 100%;
-    margin-bottom: .1rem;
+    margin-bottom: .3rem;
   }
 }

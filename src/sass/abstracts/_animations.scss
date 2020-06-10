@@ -1,0 +1,19 @@
+@keyframes slide-right {
+  0% {
+    opacity: .5;
+    transform: translateX(-50%);
+  }
+
+  50% {
+    opacity: .7;
+  }
+
+  80% {
+    opacity: .9;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

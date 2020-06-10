@@ -5,20 +5,31 @@
   display: flex;
 }
 
+.pages__wrapper {
+  width: 59%;
+}
+
 .side__panel {
   height: 100%;
-  width: 59%;
-  // border: 2px solid #fff; //test
+  width: 100%;
+  display: none;
   background-color: #fff;
   overflow-y: scroll;
   overflow-x: hidden;
   padding: 1rem 2rem;
   scroll-behavior: smooth;
+  transition: transform .5s ease;
+  backface-visibility: hidden;
+
+  &--active {
+    display: inline-block;
+    animation: slide-right ease .5s;
+  }
 }
 
 // ABOUT PAGE
 .about {
-  display: none;
+  // display: none;
   height: 100%;
   width: 100%;
 
@@ -53,8 +64,8 @@
       display: flex;
       justify-content: space-between;
       background-image: linear-gradient(to right, rgba($color-primary, .5), rgba($color-primary, .5));
-      border-radius: 5px;
-
+      text-align: right;
+      
       &:not(:last-child) {
         margin-bottom: 1rem;
       }
@@ -62,6 +73,7 @@
 
     &-item--white {
       background-color: #fff; //later implement better
+      width: 60%;
     }
   }
 
@@ -213,7 +225,7 @@
 
 // RESUME PAGE
 .resume {
-  display: none;
+  // display: none;
   // RESUME
   &__timelapse {
     &-content {
@@ -553,6 +565,8 @@
 
 // PROJECTS PAGE
 .projects {
+  // display: none;
+
   &__nav-box {
     width: 100%;
     display: flex;
@@ -660,6 +674,32 @@
     font-size: 1.3rem;
     font-weight: 300;
     color: #888;
+  }
+}
+
+//CONTACTS PAGE
+.contact {
+  // display: none;
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+
+  &__text--colored {
+    font-size: 1.5rem;
+    font-weight: 700;
+    width: 20%;
+    color: #fff;
+    background-color: $color-primary;
+    border-radius: 3px;
+    padding: .2rem .5rem;
+  }
+
+  &__text {
+    font-size: 1.5rem;
+    font-weight: 400;
   }
 }
 

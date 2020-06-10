@@ -14,7 +14,8 @@ html {
 
 body {
   box-sizing: border-box;
-  background-image: url('../../assets/images/landing-image-4.jpg');
+  // background-image: url('/src/assets/images/landing-image-4.jpg');
+  background-color: #555;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -39,3 +40,8 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.mapboxgl-canvas {
+  // width: 100% !important;
+}
+
