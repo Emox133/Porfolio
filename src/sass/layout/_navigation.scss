@@ -1,11 +1,18 @@
 .navigation {
   height: 38%;
   width: 6%;
-  // border: 2px solid #fff; //test
   background-color: #fff; //test
   border-radius: 5px;
   margin-right: 1rem;
   z-index: 1500;
+
+  @include respond(tab-land) {
+    height: 35%;
+    width: 7%;
+    position: fixed;
+    top: 1%;
+    left: 14%;
+  }
 
   &__list {
     height: 100%;

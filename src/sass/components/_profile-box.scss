@@ -3,11 +3,15 @@
   margin: -2.5rem 0 2.5rem 0;
   width: 40%;
   position: relative;
+
+  @include respond(tab-land) {
+    height: 65rem;
+    width: 65%;
+  }
   
   &__box {
     height: 100%;
     width: 100%;
-    // border: 2px solid #fff; //test
     position: relative;
     background-color: #fff;
     box-shadow: .1rem -.1rem 1rem rgba(0, 0, 0, .5);
@@ -33,7 +37,10 @@
     position: relative;
     height: 50%;
     // border-bottom: 1.5px solid #ccc; //Optional
-    // border: 2px solid orangered; //test
+    
+    @include respond(tab-land) {
+      height: 60%;
+    }
   }
 
   &__image-landing {
@@ -55,12 +62,22 @@
     border: 3px solid #fff;
     border-radius: 50%;
     background-size: cover;
+
+    @include respond(tab-land) {
+      height: 15rem;
+      width: 30%;
+      top: 120%;
+      transform: translate(-50%, -120%);
+    }
   }
 
   &__text-box {
     margin-top: 4rem;
     text-align: center;
-    // border: 2px solid blue; //test
+
+    @include respond(tab-land) {
+      margin-top: 6rem;
+    }
   }
 
   &__user-name {

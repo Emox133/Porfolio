@@ -7,6 +7,9 @@
 }
 
 html {
+  // @include respond(tab-port) {
+  //   font-size: 50%;
+  // }
   font-size: 62.5%;
   font-family: 'Nunito', sans-serif;
   scroll-behavior: smooth;
@@ -42,6 +45,6 @@ body {
 }
 
 .mapboxgl-canvas {
-  // width: 100% !important;
+  width: 100% !important;
 }
 
