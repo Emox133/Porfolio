@@ -5,12 +5,12 @@
   position: relative;
 
   @include respond(tab-land) {
-    height: 93rem;
+    height: 90vh;
     width: 80%;
   }
 
   @include respond(phone) {
-    height: 128rem;
+    height: 75vh;
     width: 90%;   
   }
   

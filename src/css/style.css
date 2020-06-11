@@ -749,11 +749,11 @@ body {
   position: relative; }
   @media only screen and (max-width: 75em) {
     .profile {
-      height: 93rem;
+      height: 90vh;
       width: 80%; } }
   @media only screen and (max-width: 37.5em) {
     .profile {
-      height: 128rem;
+      height: 75vh;
       width: 90%; } }
   .profile__box {
     height: 100%;
