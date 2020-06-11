@@ -41,6 +41,9 @@ html {
   @media only screen and (max-width: 75em) {
     html {
       font-size: 50%; } }
+  @media only screen and (max-width: 37.5em) {
+    html {
+      font-size: 37.5%; } }
 
 body {
   box-sizing: border-box;
@@ -51,6 +54,9 @@ body {
 
 ::-webkit-scrollbar {
   width: 1.3em; }
+  @media only screen and (max-width: 75em) {
+    ::-webkit-scrollbar {
+      display: none; } }
 
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.6); }
@@ -65,8 +71,9 @@ body {
   justify-content: center;
   align-items: center; }
 
-.mapboxgl-canvas {
-  width: 100% !important; }
+@media only screen and (min-width: 56.25em) {
+  .mapboxgl-canvas {
+    width: 100% !important; } }
 
 .title-box {
   font-size: 1.5rem;
@@ -107,6 +114,10 @@ body {
       position: fixed;
       top: 1%;
       left: 7.5%; } }
+  @media only screen and (max-width: 37.5em) {
+    .navigation {
+      width: 10%;
+      left: 0; } }
   .navigation__list {
     height: 100%;
     width: 100%;
@@ -151,6 +162,9 @@ body {
   @media only screen and (max-width: 75em) {
     .pages__wrapper {
       width: 80%; } }
+  @media only screen and (max-width: 37.5em) {
+    .pages__wrapper {
+      width: 90%; } }
 
 .side__panel {
   height: 100%;
@@ -231,6 +245,9 @@ body {
     row-gap: 5rem;
     column-gap: 2rem;
     margin-top: 2rem; }
+    @media only screen and (max-width: 37.5em) {
+      .about__services-grid {
+        grid-template-columns: none; } }
   .about__services-box {
     text-align: center;
     padding: 2rem; }
@@ -252,11 +269,18 @@ body {
     justify-content: center;
     text-align: center;
     margin-top: 1rem; }
+    @media only screen and (max-width: 37.5em) {
+      .about__pricing-offer {
+        flex-direction: column; } }
   .about__pricing-box {
     padding: 3rem; }
     .about__pricing-box:not(:last-child) {
       border-right: 1px solid #ccc;
       margin-right: 2rem; }
+      @media only screen and (max-width: 37.5em) {
+        .about__pricing-box:not(:last-child) {
+          margin-right: 0;
+          border: none; } }
   .about__pricing-icon {
     height: 4rem;
     width: 4rem;
@@ -316,6 +340,9 @@ body {
 .resume__timelapse-content {
   display: flex;
   justify-content: center; }
+  @media only screen and (max-width: 37.5em) {
+    .resume__timelapse-content {
+      flex-direction: column; } }
 
 .resume__timelapse-parent-box {
   width: 100%;
@@ -490,6 +517,9 @@ body {
     .resume__skills-progress-grid {
       margin-left: 6rem;
       grid-gap: 3rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .resume__skills-progress-grid {
+      margin-left: 0; } }
 
 .resume__skills-progress-box {
   height: 15rem;
@@ -516,39 +546,50 @@ body {
     fill: none;
     stroke-width: 8;
     stroke: #000;
-    stroke-dasharray: 320;
-    stroke-dashoffset: 320;
+    stroke-dasharray: 260;
+    stroke-dashoffset: 260;
     stroke-linecap: round;
     transform: translate(5px, 5px); }
     .resume__skills-progress-circle circle:nth-child(1) {
       stroke-dashoffset: 0;
       stroke: #ccc; }
   .resume__skills-progress-circle--1 circle {
-    stroke-dashoffset: calc(320 - (320 * 90) / 100);
+    stroke-dashoffset: calc(260 - (260 * 90) / 100);
     stroke: #0077b6; }
   .resume__skills-progress-circle--2 circle {
-    stroke-dashoffset: calc(320 - (320 * 80) / 100);
+    stroke-dashoffset: calc(260 - (260 * 80) / 100);
     stroke: #0077b6; }
   .resume__skills-progress-circle--3 circle {
-    stroke-dashoffset: calc(320 - (320 * 65) / 100);
+    stroke-dashoffset: calc(260 - (260 * 65) / 100);
     stroke: #0077b6; }
   .resume__skills-progress-circle--4 circle {
-    stroke-dashoffset: calc(320 - (320 * 90) / 100);
+    stroke-dashoffset: calc(260 - (260 * 90) / 100);
     stroke: #0077b6; }
 
 .resume__skills-progress-number {
   width: 50%;
   position: absolute;
-  top: 28%;
-  left: 24%; }
+  top: 23%;
+  left: 19%; }
   @media only screen and (max-width: 75em) {
     .resume__skills-progress-number {
       top: 39%;
       left: 33%; } }
+  @media only screen and (max-width: 56.25em) {
+    .resume__skills-progress-number {
+      top: 31%;
+      left: 27%; } }
+  @media only screen and (max-width: 37.5em) {
+    .resume__skills-progress-number {
+      top: 41%;
+      left: 36%; } }
 
 .resume__skills-progress-percentage {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 700; }
+  @media only screen and (max-width: 37.5em) {
+    .resume__skills-progress-percentage {
+      font-size: 2.3rem; } }
 
 .resume__skills-progress-heading-box {
   height: 2rem;
@@ -561,11 +602,15 @@ body {
 
 .resume__skills-progress-heading {
   width: 100%;
-  margin: 0 0 7.8rem 1.1rem;
+  margin: 0 0 11.8rem -1rem;
   text-align: center; }
   @media only screen and (max-width: 75em) {
     .resume__skills-progress-heading {
       margin: 0px 0 1.8rem 3rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .resume__skills-progress-heading {
+      font-size: 1.5rem;
+      margin: 0 0 0 4.5rem; } }
 
 .resume__skills-knowledge {
   margin-bottom: 2rem; }
@@ -705,6 +750,10 @@ body {
     .profile {
       height: 90vh;
       width: 80%; } }
+  @media only screen and (max-width: 37.5em) {
+    .profile {
+      height: 75vh;
+      width: 90%; } }
   .profile__box {
     height: 100%;
     width: 100%;
@@ -754,12 +803,19 @@ body {
         width: 30%;
         top: 120%;
         transform: translate(-50%, -120%); } }
+    @media only screen and (max-width: 37.5em) {
+      .profile__image-avatar {
+        height: 20rem;
+        width: 42%; } }
   .profile__text-box {
     margin-top: 4rem;
     text-align: center; }
     @media only screen and (max-width: 75em) {
       .profile__text-box {
         margin-top: 6rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .profile__text-box {
+        margin-top: 11rem; } }
   .profile__user-name {
     font-size: 3rem;
     font-weight: 400;
