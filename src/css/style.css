@@ -47,7 +47,8 @@ html {
 
 body {
   box-sizing: border-box;
-  background-color: #555;
+  background-image: url("/dist/assets/images/landing-image-4.jpg");
+  background-color: #eee;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
