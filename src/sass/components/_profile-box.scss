@@ -5,8 +5,8 @@
   position: relative;
 
   @include respond(tab-land) {
-    height: 65rem;
-    width: 65%;
+    height: 90vh;
+    width: 80%;
   }
   
   &__box {

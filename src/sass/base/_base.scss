@@ -7,9 +7,9 @@
 }
 
 html {
-  // @include respond(tab-port) {
-  //   font-size: 50%;
-  // }
+  @include respond(tab-land) {
+    font-size: 50%;
+  }
   font-size: 62.5%;
   font-family: 'Nunito', sans-serif;
   scroll-behavior: smooth;
