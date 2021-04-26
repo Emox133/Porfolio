@@ -23,6 +23,10 @@
     border-radius: 8px;
     overflow: hidden;
     z-index: 2000;
+
+    @include respond(tab-land) {
+      height: 600px;
+    }
   }
 
   &::before {
